@@ -1,6 +1,6 @@
 # OpenTron Injest — feature-rich plan
 
-Conforms to opentron-design-system SPEC.md rev 50.
+Conforms to opentron-design-system SPEC.md rev 50. Port 4850 was registered for Injest in SPEC rev 51 (2026-10-30).
 Plan written 2026-10-30, from the owner's workflow description and a sourced research
 pass over ShotPut Pro / ShotPut Studio and the open-source ingest field (sources at the
 end). This plan sits on top of INJEST-SPEC.md: the spec says what Injest is; this plan
@@ -109,10 +109,10 @@ checksum for ASC MHL.
 ### Phase 0 — Fork hygiene and family registration
 Rename and re-icon the fork (upstream's BRANDING.md asks forks for their own name
 and icon — Injest already has the name), keep the MIT licence and Bitmatch credit,
-set an upstream-sync policy, add the conformance line citing SPEC rev 50, claim
-**port 4850** for Injest in the SPEC's second block (UI-XAPP-01: after Presenter
-4840, the next product takes 4850; its extra listeners take 4851 onwards) — the
-SPEC records it before anything ships on it. UPPER-CASE core docs, the "Works with
+set an upstream-sync policy, add the conformance line citing the SPEC, and
+register **port 4850** for Injest in the SPEC's second block (UI-XAPP-01: after
+Presenter 4840, the next product takes 4850; its extra listeners take 4851
+onwards). Done 2026-10-30: SPEC rev 51 records it, before anything ships on it. UPPER-CASE core docs, the "Works with
 the other OpenTron apps" cross-link table, the `opentron` topic (UI-DOC-01–04).
 
 ### Phase 1 — The station core (ShotPut parity where it counts)
@@ -260,7 +260,7 @@ Checked against the live SPEC, rev 50 (2026-10-25) — not a cached copy.
 - **Conformance**: the repo carries "Conforms to opentron-design-system SPEC.md
   rev 50" (UI-CONF-01), and build briefs cite rule IDs (UI-CONF-02).
 - **Port**: 4850, second block, ten per product (UI-XAPP-01). Recorded in the
-  SPEC before it is shipped on.
+  SPEC at rev 51 (2026-10-30), before anything shipped on it.
 - **Tokens, no hard-coded colours**: navy `#1d2133` → `#2a2540`, accent
   `#2e9bf0`, success `--ot-ok`, warning `--ot-warn`, error `--ot-error`
   (UI-TOK-01–04). `--ot-onair` red is reserved for on-air/recording and is
